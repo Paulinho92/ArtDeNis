@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Projet Artdenis</title>
+
+  <!-- ✅ Police originale pour les chiffres -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="Artdenis.style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h2>ArtDeNis - Décoration Intérieure</h2>
+
+    <!-- ✅ LOGO sous le titre (chemin RELATIF) -->
+    <img class="logo" src="ressource_Artdenis/logo.ArtDeNis.jpg" alt="Logo Artdenis" />
+
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION ACCUEIL -->
+  <section id="accueil">
+    <h1>Bienvenue dans ArtDeNis !</h1>
+    <p class="intro-text">
+      Bienvenue chez ArtDeNis, votre partenaire de confiance pour transformer votre intérieur.
+      Nous mettons notre passion et notre savoir-faire au service de vos projets, en créant des espaces modernes, élégants et chaleureux.
+      Que vous souhaitiez rénover une pièce ou repenser l’ensemble de votre maison, notre équipe d’experts vous accompagne à chaque étape pour donner vie à vos envies.
+    </p>
+
+    <!-- ✅ Image en RELATIF -->
+    <img class="hero-img" src="ressource_Artdenis/newhouse-furniture-998265_1280.jpg" alt="Intérieur de maison décoré" />
+
+    <ol class="steps">
+      <li><span class="step-title">Premier contact téléphonique</span> : nous discutons de vos besoins et fixons un rendez-vous.</li>
+      <li><span class="step-title">Consultation initiale</span> : nous nous rendons sur place pour analyser l’espace et comprendre vos attentes.</li>
+      <li><span class="step-title">Proposition de concept</span> : nous élaborons un projet personnalisé avec des visuels et un devis détaillé.</li>
+      <li><span class="step-title">Travaux et aménagement</span> : une fois le projet validé, nous passons à la réalisation en respectant les délais convenus.</li>
+      <li><span class="step-title">Finalisation et satisfaction</span> : nous assurons un suivi jusqu’à la touche finale et garantissons votre entière satisfaction.</li>
+    </ol>
+  </section>
+
+  <!-- SECTION SERVICES -->
+  <section id="services" class="section-block">
+    <h2>À propos & Services</h2>
+    <p class="intro-text">
+      Chez Artdenis, on ne “déco” pas juste un intérieur : on crée une ambiance qui te ressemble.
+      On travaille avec des idées claires, des matériaux cohérents, et une exécution propre — pour un résultat harmonieux, pratique et élégant.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Conseil Déco</h3>
+        <p>
+          Moodboard, harmonie des couleurs, styles, choix des matières et optimisation de l’espace.
+          Idéal si tu veux une direction claire avant de te lancer.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Plan d’aménagement</h3>
+        <p>
+          Organisation des volumes, circulation, mobilier adapté et solutions de rangement.
+          Parfait pour rendre un espace plus fluide et fonctionnel.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Suivi de projet</h3>
+        <p>
+          Accompagnement étape par étape : choix des prestataires, planning, validation, finitions.
+          Tu avances sereinement, sans te prendre la tête.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT / REALISATIONS -->
+  <section id="contact">
+    <h2>Nos réalisations</h2>
+
+    <!-- ✅ PROJETS (4) -->
+<div class="projects-grid" aria-label="Galerie des projets (4)">
+
+  <!-- PROJET 1 -->
+  <article class="project-card">
+    <h3 class="project-title">Projet 1</h3>
+    <div class="project-strip" data-project="p1" aria-label="Aperçu projet 1">
+      <button class="thumb" type="button" data-project="p1" data-index="0" aria-label="Ouvrir projet 1 image 1">
+        <img src="ressource_Artdenis/20240303_173119.jpg" alt="Projet 1 - image 1">
+      </button>
+      <button class="thumb" type="button" data-project="p1" data-index="1" aria-label="Ouvrir projet 1 image 2">
+        <img src="ressource_Artdenis/20240303_173121.jpg" alt="Projet 1 - image 2">
+      </button>
+    </div>
+    <button class="open-project" type="button" data-project="p1">Voir le projet</button>
+  </article>
+
+  <!-- PROJET 2 -->
+  <article class="project-card">
+    <h3 class="project-title">Projet 2</h3>
+    <div class="project-strip" data-project="p2" aria-label="Aperçu projet 2">
+      <button class="thumb" type="button" data-project="p2" data-index="0" aria-label="Ouvrir projet 2 image 1">
+        <img src="ressource_Artdenis/20240303_173148.jpg" alt="Projet 2 - image 1">
+      </button>
+      <button class="thumb" type="button" data-project="p2" data-index="1" aria-label="Ouvrir projet 2 image 2">
+        <img src="ressource_Artdenis/20240313_104621.jpg" alt="Projet 2 - image 2">
+      </button>
+    </div>
+    <button class="open-project" type="button" data-project="p2">Voir le projet</button>
+  </article>
+
+  <!-- PROJET 3 -->
+  <article class="project-card">
+    <h3 class="project-title">Projet 3</h3>
+    <div class="project-strip" data-project="p3" aria-label="Aperçu projet 3">
+      <button class="thumb" type="button" data-project="p3" data-index="0" aria-label="Ouvrir projet 3 image 1">
+        <img src="ressource_Artdenis/20240313_104647.jpg" alt="Projet 3 - image 1">
+      </button>
+      <button class="thumb" type="button" data-project="p3" data-index="1" aria-label="Ouvrir projet 3 image 2">
+        <img src="ressource_Artdenis/20240313_104709.jpg" alt="Projet 3 - image 2">
+      </button>
+    </div>
+    <button class="open-project" type="button" data-project="p3">Voir le projet</button>
+  </article>
+
+  <!-- PROJET 4 -->
+  <article class="project-card">
+    <h3 class="project-title">Projet 4</h3>
+    <div class="project-strip" data-project="p4" aria-label="Aperçu projet 4">
+      <button class="thumb" type="button" data-project="p4" data-index="0" aria-label="Ouvrir projet 4 image 1">
+        <img src="ressource_Artdenis/20240313_104713.jpg" alt="Projet 4 - image 1">
+      </button>
+      <button class="thumb" type="button" data-project="p4" data-index="1" aria-label="Ouvrir projet 4 image 2">
+        <img src="ressource_Artdenis/DSC_7770.jpg" alt="Projet 4 - image 2">
+      </button>
+    </div>
+    <button class="open-project" type="button" data-project="p4">Voir le projet</button>
+  </article>
+
+</div>
+
+<!-- ✅ MODAL PROJET (carrousel qui apparaît au clic) -->
+<div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" data-close="modal"></div>
+
+  <div class="modal-panel" role="document">
+    <button class="modal-close" type="button" data-close="modal" aria-label="Fermer">✕</button>
+    <h3 class="modal-title" id="modalTitle">Projet</h3>
+
+    <div class="modal-carrousel" id="modalCarrousel" aria-label="Carrousel du projet"></div>
+
+    <div class="modal-controls">
+      <button class="modal-btn" type="button" id="prevBtn" aria-label="Image précédente">◀</button>
+      <button class="modal-btn" type="button" id="nextBtn" aria-label="Image suivante">▶</button>
+    </div>
+
+    <p class="modal-hint">Clique sur une image pour l’afficher en grand.</p>
+  </div>
+</div>
+
+<!-- ✅ VIEWER IMAGE (affichage en grand) -->
+<div class="viewer" id="imgViewer" aria-hidden="true">
+  <div class="viewer-backdrop" data-close="viewer"></div>
+  <img class="viewer-img" id="viewerImg" alt="Image en grand">
+  <button class="viewer-close" type="button" data-close="viewer" aria-label="Fermer l'image">✕</button>
+</div>
+
+
+    <footer>
+      <p>Contactez-nous :</p>
+
+      <div class="contact-actions">
+        <!-- ✅ Tel demandé : 06 61 63 20 12 -->
+        <a class="contact-btn" href="tel:+33661632012" aria-label="Appeler le 06 61 63 20 12">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.2z"/>
+          </svg>
+          06 61 63 20 12
+        </a>
+
+        <!-- ✅ Mail demandé : kais92i@hotmail.com -->
+        <a class="contact-btn"
+           href="mailto:kais92i@hotmail.com?subject=Contact%20ArtDeNis&body=Bonjour%20ArtDeNis,%0D%0A%0D%0AJe%20souhaite%20avoir%20des%20informations%20concernant...%0D%0A%0D%0AMerci%20!"
+           aria-label="kais92i@hotmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          kais92i@hotmail.com
+        </a>
+      </div>
+
+      <p>&copy; 2026 Artdenis. Tous droits réservés.</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.047c.476-.9 1.637-1.852 3.37-1.852 3.601 0 4.265 2.37 4.265 5.455v6.288zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zM6.814 20.452H3.86V9h2.954v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
+            <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+            <path d="M17.5 6.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12a10 10 0 1 0-11.563 9.874v-6.987H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.887h-2.33v6.987A10.003 10.003 0 0 0 22 12z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </section>
+  <script src="Artdenis.script.js"></script>
+</body>
+</html>
